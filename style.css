@@ -1,0 +1,67 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #b09d9d;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 600;
+    color: #333;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+#instructions {
+    margin-bottom: 20px;
+}
+
+#instructions h2 {
+    font-size: 2em;
+}
+
+#instructions p {
+    font-size: 1.5em;
+}
+
+#maze {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-template-rows: repeat(20, 30px);
+    gap: 2px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .wall {
+    background-color: #000000;
+  }
+  
+  .player {
+    background-color: #f00;
+  }
+  
+  .goal {
+    background-color: rgb(62, 161, 62);
+  }
+
+#message {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #00ff3c;
+    font-size: 2em;
+}
